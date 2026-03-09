@@ -24,11 +24,11 @@ void loop() {
   Serial.println(" cm");
 
   if (distanceCm > 0 && distanceCm <= 30) {
-    digitalWrite(ledPin, HIGH);
-    delay(500);
-    digitalWrite(ledPin, LOW);
-    delay(150);
     Serial.println("Intruder Detected!!!");
+    digitalWrite(ledPin, HIGH);
+    delay(700);
+    digitalWrite(ledPin, LOW);
+    delay(350);
   } else {
     digitalWrite(ledPin, LOW);
   }
